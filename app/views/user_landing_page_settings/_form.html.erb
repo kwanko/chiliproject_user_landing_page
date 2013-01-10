@@ -1,0 +1,6 @@
+<%= error_messages_for :user_landing_page_setting %>
+<div class="box tabular">
+<p><%= f.text_field :page_name, :size => 30, :required => true %></p>
+<p><%= f.text_field :page_url, :size => 60, :required => true %>&nbsp;<em><%= l(:label_example) %>: <%= @guessed_host %></em></p>
+<p><%= f.select :group_id, Group.all.collect {|g| [g.name, g.id]}, :include_blank => l(:text_select_group) %> </p>
+<p><%= f.check_box :visible %></p>

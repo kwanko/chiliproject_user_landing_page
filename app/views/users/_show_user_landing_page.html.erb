@@ -1,0 +1,12 @@
+<%
+# User landing page plugin for Chiliproject
+# Copyright (C) 2011 Arnauld NYAKU
+%>
+
+<h3><%=h l(:label_user_landing_page) %></h3>
+
+<div class="wiki">
+  <%= UserLandingPageSetting.find(@user.pref.ulp).page_name  + ' : ' + UserLandingPageSetting.find(@user.pref.ulp).page_url if @user.pref.ulp %>
+  <br/>
+  <br/>
+</div>

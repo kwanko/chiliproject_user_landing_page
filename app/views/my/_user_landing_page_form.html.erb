@@ -1,0 +1,10 @@
+<%
+# User landing page plugin for Chiliproject
+# Copyright (C) 2011 Arnauld NYAKU
+%>
+</div>
+<h3><%=h l(:label_user_landing_page)%></h3>
+
+<div class='box tabular'>
+  <% groups = User.current.groups.collect { |g| g.id  } %>
+  <%= select :pref, :ulp, UserLandingPageSetting.find(:all, :conditions => ['? = visible AND group_id in (?)', 1, groups]).collect {|s| [s.page_name.to_s + ' : ' + s.page_url.to_s, s.id]}, :include_blank => true %>

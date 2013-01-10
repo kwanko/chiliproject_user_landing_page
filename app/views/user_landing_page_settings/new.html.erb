@@ -1,0 +1,7 @@
+<h2><%= link_to l(:label_user_landing_pages), user_landing_page_settings_path %> &#187; <%=l(:label_user_landing_page_settings_new)%></h2>
+
+<% form_for(@user_landing_page_setting, :builder => TabularFormBuilder, :lang => current_language) do |f| %>
+<%= render :partial => 'form', :locals => { :f => f } %>
+<%= submit_tag l(:button_create) %>
+<% end %>
+

@@ -1,0 +1,11 @@
+# English strings go here for Rails i18n
+en:
+  field_page_name: Page name
+  field_page_url: Page url
+  field_group : Group
+
+  label_user_landing_pages: User landing pages
+  label_user_landing_page_settings_new: New user landing page
+  label_user_landing_page: Landing page
+
+  text_select_group: Select a group

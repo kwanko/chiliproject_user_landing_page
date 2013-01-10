@@ -1,0 +1,45 @@
+=== Chiliproject User landing page plugin 0.0.1
+
+This is a user landing page plugin for Chiliproject.
+ONLY compatible with Chiliproject 3.X NOT compatible with Chiliproject 2.X
+
+
+== Getting the plugin
+
+The newest version is always at {GitHub}[http://github.com/kwanko/chiliproject_user_landing_page].
+
+=== Feature
+
+1. Allow admin to set up whatever ChiliProject URL as a landing page.
+
+2. Permit to restrict landing page to a group
+
+3. User can choose his landing page in the list available for his group via his account interface.
+
+
+=== Plugin installation
+
+1. Copy the plugin directory(chiliproject_trombinoscope) into the vendor/plugins or vendor/chiliproject_plugins directory
+   NOTE: The plugin directory must be chiliproject_trombinoscope!
+
+2. Migrate plugin:
+   rake db:migrate:plugin NAME=chiliproject_user_landing_page RAILS_ENV=production
+
+3. Start Chiliproject
+
+Installed plugins are listed on 'Admin -> Plugins' screen.
+
+4. Start defining landing page in Adminstration > Settings > User Landing Page
+
+=== Changelog
+
+0.0.1 -> First commit.
+
+
+=== Contact info
+
+Email    -> arnauld.nyaku@gmail.com
+
+=== Licence
+
+The code is released under the GPLv2: http://www.gnu.org/licenses/old-licenses/gpl-2.0.html
